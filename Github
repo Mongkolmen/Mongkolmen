@@ -1,0 +1,25 @@
+package inputnumbers;
+import java.util.Scanner;
+
+public class InputNumbers {
+    public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of numbers you want to input: ");
+        int numCount = scanner.nextInt();
+
+        int[] numbers = new int[numCount];
+
+        System.out.println("Enter the numbers: ");
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = scanner.nextInt();
+        }
+
+        System.out.println("\nEntered numbers:");
+        for (int number : numbers) {
+            System.out.println(number);
+        }
+    
+    }
+    
+}
